@@ -4,25 +4,25 @@
 <div class="container">
 
     <h2>회원가입</h2>
-    <form action="/action_page.php">
+    <form>
         <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
-        </div>
-
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            <input type="text" class="form-control" placeholder="Enter username" name="username" id="username">
         </div>
 
         <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+            <input type="password" class="form-control" placeholder="Enter password" name="password" id="password">
         </div>
 
-        <button type="submit" class="btn btn-primary">회원가입완료</button>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" placeholder="Enter email" name="email" id="email">
+        </div>
     </form>
+    <button id="btn-save" class="btn btn-primary">회원가입완료</button>
 
 </div>
 
+<script src="${root }/resources/js/user.js"></script>
 <%@ include file="../layout/footer.jsp" %>
